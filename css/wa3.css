@@ -1,0 +1,16 @@
+h1{
+    text-align: right;
+}
+
+.container{
+    display: flex;
+}
+
+.box-1{
+    height: 300px;
+    width: 50%;
+}
+.box-2{
+    height: 300px;
+    width: 50%;
+}
