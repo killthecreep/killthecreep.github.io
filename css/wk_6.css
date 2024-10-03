@@ -1,0 +1,47 @@
+/* 1 */
+p{
+    color: red;
+}
+
+/* 11 weight */
+p.purple{
+    color: purple;
+}
+
+/* The total weight would be 101 */
+p #blue{
+    color: blue;
+}
+
+div{
+    border-style: dashed;
+    border-color: blueviolet;
+    /* padding: 30px; */
+
+    margin: 100px;
+    margin-left: 200px;
+    padding: 100px;
+}
+
+img{
+    position: sticky;
+    left: auto;
+    width: 10vw;
+    bottom: 10px;
+}
+
+#first_div{
+    position: fixed;
+    left: 200px;
+}
+
+#second_div{
+    height: 600px;
+}
+h1{
+    text-shadow: 1px 1px 2px black;
+}
+
+
+
+/*  */
