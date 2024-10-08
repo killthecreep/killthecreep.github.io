@@ -1,0 +1,56 @@
+body{
+    background: fixed url("/img/Skate_Styles.jpg");
+}
+
+#flex-container{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    height: 100px;
+    width: 320px;
+    right: 0px;
+}
+
+#second-flex{
+    display: flex;
+    height: auto;
+    width: 280px;
+    float: right;
+    margin-top: 120px;
+    margin-right: 21px;
+}
+
+
+.box-1 img, .box-2 img{
+
+    height: 100%;
+    width: 100%;
+}
+
+.box-1{
+    height: 115px;
+    width: 150px;
+    border: 1px solid black;
+}
+.box-2{
+    height: 115px;
+    width: 150px;
+    border: 1px solid red;
+}
+.box-3{
+    height: auto;
+    width: 150px;
+    border: 3px solid green;
+    background-color: white;
+    margin: auto;
+    padding: 15px;
+}
+
+.box-4{
+    height: auto;
+    width: 150px;
+    border: 3px solid green;
+    background-color: white;
+    margin: auto;
+    padding: 15px;
+}
