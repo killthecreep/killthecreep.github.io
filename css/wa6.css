@@ -7,7 +7,7 @@ body{
     position: absolute;
     flex-direction: row;
     height: 100px;
-    width: 320px;
+    width: 100%;
     right: 0px;
 }
 
