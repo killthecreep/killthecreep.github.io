@@ -21,13 +21,20 @@ function parseData(data){
     }   
 }
 
-for(button of document.querySelectorAll("#buttons button")){
-    button.addEventListener("click", e=> {
-        console.log(e.target.value);
+// for(button of document.querySelectorAll("#buttons button")){
+//     button.addEventListener("click", e=> {
+//         console.log(e.target.value);
 
-        sortProjects(e.target.value);
-    })
-}
+//         sortProjects(e.target.value);
+//     })
+// }
+
+// document.getElementById("menuButton").addEventListener("click", e=> {
+//     console.log("Button Pressed");
+//     window.location.href="./menuPage.html";
+// });
+
+
 
 function sortProjects(button){
     if(button == "clear"){
