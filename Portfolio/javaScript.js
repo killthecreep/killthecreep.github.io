@@ -35,12 +35,15 @@ if (window.location.pathname.endsWith("main.html")){
 
 if (window.location.pathname.endsWith("main.html")) {
     const menuButton = document.getElementById("menuButton");
+    const hireButton = document.getElementById("hireButton");
+
     if (menuButton) {
         menuButton.addEventListener("click", (e) => {
             console.log("Button Pressed");
             window.location.href = "./menuPage.html";
         });
     }
+
 } else if (window.location.pathname.endsWith("menuPage.html")) {
     const homeButton = document.getElementById("homeButton");
     if (homeButton) {
@@ -49,6 +52,18 @@ if (window.location.pathname.endsWith("main.html")) {
             window.location.href = "./main.html";
         });
     }
+}
+
+if (window.location.pathname.endsWith("main.html")) {
+    const hireButton = document.getElementById("hireButton");
+
+    if (hireButton){
+        hireButton.addEventListener("click", (e) => {
+            console.log("Button Pressed");
+            window.location.href = "./hirePage.html";
+        });
+    }
+
 }
 
 function sortProjects(button){
