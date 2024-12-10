@@ -1,5 +1,4 @@
 html, body {
-
     margin: 0;               
     padding: 0;              
     width: 100%;        
@@ -33,6 +32,72 @@ html, body {
     border-radius: 10px;
 }
 
+#project {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10%;
+    margin-left: 25px;
+    padding: 3%;
+    /* padding-bottom: 15%; */
+    background-color: rgba(134, 251, 255, 0.564);
+    border-radius: 10px;
+}
+
+.project-text{
+    flex: 1;
+    align-items: left;
+    /* margin-left: 5%; */
+}
+
+.full-img {
+    /* position: relative;
+    display: block; */
+    width: 50vw;
+    padding: 1%;
+    height: auto;
+}
+
+.displayed-img{
+    /* position: relative;
+    display: block; */
+    width: 70%;
+    height: auto;
+    margin-left: 12%;
+}
+
+.thumb-bar img {
+    display: flex;
+    /* width: 15%; */
+    height: 7vw;
+    float: left;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 640px;
+    height: 480px;
+    background-color: rgba(0,0,0,0);
+}
+
+.project-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.project-images{
+    width: 80%;
+    height: auto;
+    /* border-radius: 50%; */
+    object-fit: cover;
+    /* justify-content: center; */
+}
+
 .headshot-container{
     display: flex;
     justify-content: center;
@@ -64,8 +129,8 @@ html, body {
 
 .text{
     flex: 1;
-    align-items: left;
-    margin-left: 5%;
+    align-items: center;
+    margin-left: 10%;
 }
 
 h1{
@@ -82,11 +147,14 @@ h2{
 #projects{
     display: flex;
     flex-direction:column;
-    margin: 10vh 20vw;
+    justify-content: space-around;
+    margin: 10vh 5vw;
 }
 
 #projects a{
     text-decoration:none;
+    align-items: center;
+    justify-content: center;
     color:black;
 }
 
@@ -97,13 +165,16 @@ h2{
 .project{
     display:flex;
     flex-direction:row;
-    border: 1px solid black;
+    justify-content: space-between;
+    background-color: rgba(134, 251, 255, 0.564);
     margin-top:10px;
     padding: 15px 20px;
+    border-radius: 10px;
 }
 
 .project img{
-    width:10vw;
+    width: 15vw;
+    height: auto;
 }
 
 .btn {
@@ -122,15 +193,15 @@ h2{
   border-radius: 5px;
   transform: translateY(-10px);
   box-shadow: 0 7px 0 -2px #f85959,
-   0 15px 0 -4px #39a2db,
-   0 16px 10px -3px #39a2db;
+   0 15px 0 -4px rgba(134, 251, 255, 0.564),
+   0 16px 10px -3px rgba(134, 251, 255, 0.564);
  }
  
  .btn:active {
   transition: all 0.2s;
   transform: translateY(-5px);
   box-shadow: 0 2px 0 -2px #f85959,
-   0 8px 0 -4px #39a2db,
-   0 12px 10px -3px #39a2db;
+   0 8px 0 -4px rgba(134, 251, 255, 0.564),
+   0 12px 10px -3px rgba(134, 251, 255, 0.564);
  }
   

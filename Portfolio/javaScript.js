@@ -14,9 +14,9 @@ fetch('./effects.json')
 if (window.location.pathname.endsWith("main.html")){
     function parseData(data){
         for(let i = 0; i < data.projects.length; i++){
-            document.getElementById("projects").innerHTML += ` <a href = "/${data.projects[i].subdomain}.html">
+            document.getElementById("projects").innerHTML += ` <a href = "/Portfolio/${data.projects[i].subdomain}.html">
             <div class = "row project" id = "${data.projects[i].subdomain}">
-                <div class = "projimg"><img src = "../img/Unicorns/unicorn (${i + 1}).png"></div>
+                <div class = "project"><img src = "./images/projectClipshots/projectClipshot (${i + 1}).png"></div>
                 <div class = "description"><h2>${data.projects[i].name}</h2><p class ="subtitle">${data.projects[i].subtitle}</p>
                 <p>${data.projects[i].abstract}</p></div></div></a>`;
         }   
@@ -44,18 +44,23 @@ if (window.location.pathname.endsWith("main.html")) {
         });
     }
 
+    if (hireButton){
+        hireButton.addEventListener("click", (e) => {
+            console.log("Button Pressed");
+            window.location.href = "./hirePage.html";
+        });
+    }
+
 } else if (window.location.pathname.endsWith("menuPage.html")) {
     const homeButton = document.getElementById("homeButton");
+    const hireButton = document.getElementById("hireButton");
+
     if (homeButton) {
         homeButton.addEventListener("click", (e) => {
             console.log("Button Pressed");
             window.location.href = "./main.html";
         });
     }
-}
-
-if (window.location.pathname.endsWith("main.html")) {
-    const hireButton = document.getElementById("hireButton");
 
     if (hireButton){
         hireButton.addEventListener("click", (e) => {
@@ -64,7 +69,25 @@ if (window.location.pathname.endsWith("main.html")) {
         });
     }
 
+} else if (window.location.pathname.endsWith("hirePage.html")) {
+    const homeButton = document.getElementById("homeButton");
+    const menuButton = document.getElementById("menuButton");
+
+    if (homeButton) {
+        homeButton.addEventListener("click", (e) => {
+            console.log("Button Pressed");
+            window.location.href = "./main.html";
+        });
+    }
+
+    if (menuButton) {
+        menuButton.addEventListener("click", (e) => {
+            console.log("Button Pressed");
+            window.location.href = "./menuPage.html";
+        });
+    }
 }
+
 
 function sortProjects(button){
     if(button == "clear"){
