@@ -54,6 +54,11 @@ if (window.location.pathname.endsWith("main.html")) {
 } else if (window.location.pathname.endsWith("menuPage.html")) {
     const homeButton = document.getElementById("homeButton");
     const hireButton = document.getElementById("hireButton");
+    const instagram = document.getElementById("instagram");
+    const github = document.getElementById("github");
+    const mail = document.getElementById("mail");
+    const aboutSam = document.getElementById("aboutSam");
+    const projectPage = document.getElementById("projectPage");
 
     if (homeButton) {
         homeButton.addEventListener("click", (e) => {
@@ -66,6 +71,41 @@ if (window.location.pathname.endsWith("main.html")) {
         hireButton.addEventListener("click", (e) => {
             console.log("Button Pressed");
             window.location.href = "./hirePage.html";
+        });
+    }
+
+    if (instagram){
+        instagram.addEventListener("click", (e) => {
+            console.log("Instagram Button Pressed");
+            window.location.href = "https://www.instagram.com/kastencreations/";
+        });
+    }
+
+    if (github){
+        github.addEventListener("click", (e) => {
+            console.log("Button Pressed");
+            window.location.href = "https://github.com/killthecreep";
+        });
+    }
+
+    if (mail){
+        mail.addEventListener("click", (e) => {
+            console.log("Button Pressed");
+            window.location.href = "mailto:sam.kasten@colorado.edu";
+        });
+    }
+
+    if (aboutSam){
+        aboutSam.addEventListener("click", (e) => {
+            console.log("Button Pressed");
+            window.location.href = "./aboutMe.html";
+        });
+    }
+
+    if (projectPage){
+        projectPage.addEventListener("click", (e) => {
+            console.log("Button Pressed");
+            window.location.href = "./main.html#projects";
         });
     }
 
@@ -86,11 +126,11 @@ if (window.location.pathname.endsWith("main.html")) {
             window.location.href = "./menuPage.html";
         });
     }
-}
+} 
 
 
 function sortProjects(button){
-    if(button == "clear"){
+    if(button == "School Projects"){
         for(i=0; i< proj.projects.length; i++){
             document.getElementById(proj.projects[i].subdomain).style.display = "flex";
         }
