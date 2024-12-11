@@ -76,6 +76,7 @@ if (window.location.pathname.endsWith("main.html")) {
     const mail = document.getElementById("mail");
     const aboutSam = document.getElementById("aboutSam");
     const projectPage = document.getElementById("projectPage");
+    const resume = document.getElementById("resumeLink");
 
     if (homeButton) {
         homeButton.addEventListener("click", (e) => {
@@ -123,6 +124,13 @@ if (window.location.pathname.endsWith("main.html")) {
         projectPage.addEventListener("click", (e) => {
             console.log("Button Pressed");
             window.location.href = "./main.html#projects";
+        });
+    }
+
+    if (resume){
+        resume.addEventListener("click", (e) => {
+            console.log("Button Pressed");
+            window.location.href = "./hirePage.html";
         });
     }
 
