@@ -22,16 +22,33 @@ if (window.location.pathname.endsWith("main.html")){
         }   
     }
 
+    for(b of document.querySelectorAll("#filter .btn2")){
+        b.addEventListener("click", e=> {
+            console.log(e.target.value);
+            sortProjects(e.target.value);
+        })
+    }
+    
+    function sortProjects(button){
+        if(button == "clear"){
+            for(i=0; i< proj.projects.length; i++){
+                document.getElementById(proj.projects[i].subdomain).style.display = "flex";
+            }
+        }else if(button != undefined){
+            for(i = 0; i< proj.projects.length; i++){
+                if(proj.projects[i].category.includes(button) == true){
+                    document.getElementById(proj.projects[i].subdomain).style.display = "flex";
+                }
+                else{
+                    document.getElementById(proj.projects[i].subdomain).style.display = "none";
+                }
+            }
+        }else{
+            console.log("error, button calue is undefined");
+        }
+    }
+
 }
-
-
-// for(button of document.querySelectorAll("#buttons button")){
-//     button.addEventListener("click", e=> {
-//         console.log(e.target.value);
-
-//         sortProjects(e.target.value);
-//     })
-// }
 
 if (window.location.pathname.endsWith("main.html")) {
     const menuButton = document.getElementById("menuButton");
@@ -127,26 +144,6 @@ if (window.location.pathname.endsWith("main.html")) {
         });
     }
 } 
-
-
-function sortProjects(button){
-    if(button == "School Projects"){
-        for(i=0; i< proj.projects.length; i++){
-            document.getElementById(proj.projects[i].subdomain).style.display = "flex";
-        }
-    }else if(button != undefined){
-        for(i = 0; i< proj.projects.length; i++){
-            if(proj.projects[i].category.includes(button) == true){
-                document.getElementById(proj.projects[i].subdomain).style.display = "flex";
-            }
-            else{
-                document.getElementById(proj.projects[i].subdomain).style.display = "none";
-            }
-        }
-    }else{
-        console.log("error, button calue is undefined");
-    }
-}
 
 // //character position property
 // let char = {};

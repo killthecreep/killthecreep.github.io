@@ -2,7 +2,7 @@
 	"projects": [{
 		"name": "About Sam",
 		"subdomain": "aboutMe",
-		"category": ["tangible", "networked", "participatory", "publication", "lead", "methods"],
+		"category": ["personal", "networked", "participatory", "publication", "lead", "methods"],
 		"subtitle": "Jack of all Trades",
 		"collaborators": ["Kaiwen Sun", "Zahra Dhuliawala", "Fumi Tsukiyama", "Iva Matkovic", "Anastasia Wolf", "Zihao (Leo) Zhang", "Priyanka Balasubramaniyam", "Zach Schwemler", "Allison Druin", "Jason Yip", "Amanda Huynh", "Daniel Leithinger"],
 		"abstract": "As a Jack-of-all trades I am always keeping busy. I am a skateboarder for more than ten years and am currently ride for a local skateshop, Loco Skate Shop in Longmont Colorado. Also an advid lover of adventuring and exploring new places, be it here in Colorado or further. Though I always find time to create new things, be it rugs or artwork, 3D models, or programs and games",
@@ -16,7 +16,7 @@
 },{
 			"name": "Cyberfrog",
 			"subdomain": "cyberfrog",
-			"category": ["tangible", "networked", "participatory", "publication", "lead", "methods"],
+			"category": ["school", "networked", "participatory", "publication", "lead", "methods"],
 			"subtitle": "The Colorado Nasa Space Grant Project",
 			"collaborators": ["Kaiwen Sun", "Zahra Dhuliawala", "Fumi Tsukiyama", "Iva Matkovic", "Anastasia Wolf", "Zihao (Leo) Zhang", "Priyanka Balasubramaniyam", "Zach Schwemler", "Allison Druin", "Jason Yip", "Amanda Huynh", "Daniel Leithinger"],
 			"abstract": "This is the FRCC Cyberfrog! At Front Range Community College I had the oppertunity and privalege to lead the robotics team. Going on to lead the team to participate in the NASA Colorado Space Grand Consortium, where we were tasked with creating an autonomous mars rover the size of a house cat.",
@@ -30,7 +30,7 @@
 	},{		
 			"name": "Blender Projects",
 			"subdomain": "blender",
-			"category": ["tangible", "networked", "participatory", "toolkit", "shape_change", "publication", "award", "support"],
+			"category": ["personal", "networked", "participatory", "toolkit", "shape_change", "publication", "award", "support"],
 			"subtitle": "A mix of Blender Projects",
 			"collaborators": ["Ran Zhou (Lead)", "Zachary Schwemler","Aksha Baweja", "Harpreet Sareen", "Daniel Leithinger"],
 			"abstract": "I have a passion for 3D art not only in video games, but as a median. These are just a few examples of my work developed in Blender. This is a bunch of filler text to see if the more text imputed fixes the alignment issue I was getting. So I ask how is your day going? Mine is well, thanks for asking.",
@@ -46,7 +46,7 @@
 	},{
 			"name": "One-Button Game",
 			"subdomain": "deepDive",
-			"category": ["tangible", "participatory", "educational", "publication", "lead", "education"],
+			"category": ["school", "participatory", "educational", "publication", "lead", "education"],
 			"subtitle": "Deep Dive, a submarine based game",
 			"collaborators": ["Chris Hill (Co-Lead)", "Sammie Crowder", "Brett Fielder", "Emily Moore", "Ann Eisenberg"],
 			"abstract": "Deep dive is a One-Button game thaat uses the theme of underwater maritime theme. A simple flappy bird clone, how long can you survive? This is a bunch of filler text to see if the more text imputed fixes the alignment issue I was getting. So I ask how is your day going? Mine is well, thanks for asking.",
@@ -61,7 +61,7 @@
 		},{
 			"name": "Art Projects",
 			"subdomain": "artwork",
-			"category": ["tangible", "participatory", "lead"],
+			"category": ["personal", "participatory", "lead"],
 			"subtitle": "Ambient Community Wellness Display ",
 			"collaborators": ["Ruojia Sun", "Kit Lewers", "Sandra Bae", "Steve Voida"],
 			"abstract": "An ambient display that invites students and faculty to share and reflect on their stress as a community. With a combination of self-reported and biometric data, the community controls each robotic flower in the bouquet to record stress via closed or blooming buds.",
